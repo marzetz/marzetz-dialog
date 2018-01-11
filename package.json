@@ -1,6 +1,6 @@
 {
   "name": "marzetz-dialog",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "MarzetzDialog is an Angular module, that can be used to show custom popups in any Angular app.",
   "main": "marzetz-dialog.module.ts",
   "scripts": {
