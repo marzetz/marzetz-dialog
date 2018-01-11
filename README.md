@@ -20,7 +20,7 @@ Import the `MarzetzDialogModule` in your root application module:
 
 ```typescript
 import {NgModule} from '@angular/core';
-import {MarzetzDialogModule} from 'marzetz-dialog/marzetz-dialog.module';
+import {MarzetzDialogModule} from 'marzetz-dialog';
 
 @NgModule({
 	imports: [
@@ -50,7 +50,7 @@ Init your dialog:
 
 ```typescript
 import {Component, OnInit} from '@angular/core';
-import {MarzetzDialogInternal, MarzetzDialogService, MarzetzDialogOptions} from 'marzetz-dialog.module';
+import {MarzetzDialogInternal, MarzetzDialogService, MarzetzDialogOptions} from 'marzetz-dialog';
 import {SomeComponent} from './component';
 
 @Component({
@@ -81,7 +81,7 @@ Open and close your dialog:
 
 ```typescript
 import {Component, OnInit} from '@angular/core';
-import {MarzetzDialogInternal, MarzetzDialogService, MarzetzDialogOptions} from 'marzetz-dialog.module';
+import {MarzetzDialogInternal, MarzetzDialogService, MarzetzDialogOptions} from 'marzetz-dialog';
 import {SomeComponent} from './component';
 
 @Component({

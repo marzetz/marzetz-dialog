@@ -1,6 +1,6 @@
 {
   "name": "marzetz-dialog",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "MarzetzDialog is an Angular module, that can be used to show custom popups in any Angular app.",
   "main": "marzetz-dialog.module.ts",
   "scripts": {
@@ -22,9 +22,9 @@
   "author": "Michał Marzec",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/michal_marzec/DialogPlayground/issues"
+    "url": "https://github.com/marzetz/marzetz-dialog/issues"
   },
-  "homepage": "https://gitlab.com/michal_marzec/DialogPlayground#README",
+  "homepage": "https://github.com/marzetz/marzetz-dialog#README",
   "devDependencies": {
     "ng-packagr": "^1.6.0"
   },
