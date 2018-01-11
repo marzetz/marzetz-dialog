@@ -155,4 +155,4 @@ Option | Type | Default | Desctiption
 
 ## LICENSE
 
-This project is licensed under the MIT license.
+This project is licensed under the MIT license. [LICENSE](https://github.com/marzetz/marzetz-dialog/blob/master/LICENSE)
