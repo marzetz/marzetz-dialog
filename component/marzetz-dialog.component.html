@@ -1,0 +1,12 @@
+<div class="marzetz-dialog-backdrop" (click)="close(closingTrigger.overlay)" [hidden]="!dialogSettings._opened"></div>
+<div class="marzetz-dialog-cage" [hidden]="!dialogSettings._opened">
+    <div class="marzetz-dialog" [ngClass]="dialogSettings.options.animation">
+        <div class="marzetz-dialog-close-cage" (click)="close(closingTrigger.icon)">
+            <div class="marzetz-dialog-close"></div>
+        </div>
+        <div class="marzetz-dialog-content">
+            <div [innerHtml]="dialogSettings.options.customContent"></div>
+            <ng-template #dynamicTemplate></ng-template>
+        </div>
+    </div>
+</div>

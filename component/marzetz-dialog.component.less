@@ -1,0 +1,105 @@
+@import "../style/utility";
+@import "../style/animation";
+
+@marzetz-dialog-background-color: #ffffff;
+@marzetz-dialog-width: 660px;
+@marzetz-dialog-offset: 100px;
+@marzetz-dialog-padding-top-bottom: 40px;
+@marzetz-dialog-padding-left-right: 30px;
+@marzetz-dialog-border-radius: 5px;
+
+@marzetz-dialog-close-offset-top: 10px;
+@marzetz-dialog-close-offset-right: 10px;
+@marzetz-dialog-close-color: #545454;
+@marzetz-dialog-close-width: 20px;
+@marzetz-dialog-close-height: 2px;
+@marzetz-dialog-close-rotation: 45deg;
+
+* {
+  .box-sizing(border-box);
+}
+
+.marzetz-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1000;
+  .animateIt(fadeIn);
+}
+
+.marzetz-dialog-cage {
+  margin-top: @marzetz-dialog-offset;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  .translate(-50%, 0);
+  width: @marzetz-dialog-width;
+  max-width: 100%;
+  z-index: 1001;
+}
+
+.marzetz-dialog {
+  position: relative;
+  background-color: @marzetz-dialog-background-color;
+  padding: (2 * @marzetz-dialog-close-offset-top + @marzetz-dialog-close-width) @marzetz-dialog-padding-left-right @marzetz-dialog-padding-left-right @marzetz-dialog-padding-top-bottom;
+  .border-radius(@marzetz-dialog-border-radius);
+  .center-block();
+  .marzetz-dialog-content {
+    overflow: auto;
+    max-height: ~'calc(100vh - @{marzetz-dialog-offset} - (2 * @{marzetz-dialog-close-offset-top} + @{marzetz-dialog-close-width}) - @{marzetz-dialog-padding-top-bottom})';
+  }
+  &.normal {
+    .animateIt(fadeIn, .3s, .2s);
+  }
+  &.error {
+    .animateIt(shake, .4s, .2s);
+  }
+}
+
+.marzetz-dialog-close-cage {
+  position: absolute;
+  top: @marzetz-dialog-close-offset-top;
+  right: @marzetz-dialog-close-offset-right;
+}
+
+.marzetz-dialog-close {
+  position: relative;
+  width: @marzetz-dialog-close-width;
+  height: @marzetz-dialog-close-width;
+  cursor: pointer;
+  &:before {
+    background-color: @marzetz-dialog-close-color;
+    content: " ";
+    position: absolute;
+    width: @marzetz-dialog-close-width;
+    height: @marzetz-dialog-close-height;
+    .rotate(@marzetz-dialog-close-rotation);
+    top: 50%;
+    left: 0;
+    margin-top: -@marzetz-dialog-close-height/2;
+  }
+  &:after {
+    background-color: @marzetz-dialog-close-color;
+    content: " ";
+    position: absolute;
+    width: @marzetz-dialog-close-width;
+    height: @marzetz-dialog-close-height;
+    .rotate(-@marzetz-dialog-close-rotation);
+    top: 50%;
+    left: 0;
+    margin-top: -@marzetz-dialog-close-height/2;
+  }
+}
+
+
+// dev
+//.marzetz-dialog-close-cage {
+//  border: 1px solid blue;
+//}
+//
+//.marzetz-dialog-content {
+//  border: 1px solid red;
+//}
