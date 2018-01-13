@@ -1,0 +1,16 @@
+<div class="custom-dialog-component">
+    <form [formGroup]="myForm" (submit)="submit()">
+        <div class="input-wrapper">
+            <input formControlName="foo">
+        </div>
+        <div class="input-wrapper">
+            <input formControlName="bar">
+        </div>
+        <div class="input-wrapper">
+            <button>Submit</button>
+        </div>
+        <div class="input-wrapper">
+            <button type="button" (click)="closeFromInside()">Close from inside</button>
+        </div>
+    </form>
+</div>

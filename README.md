@@ -6,7 +6,7 @@
 
 ## Demo
 
-Demo is not available yet.
+![demo](https://raw.githubusercontent.com/devyumao/devyumao.github.io/master/angular2-busy/img/demo.gif)
 
 ## Installation
 
@@ -139,7 +139,7 @@ Option | Type | Default | Desctiption
 --- | --- | --- | ---
 `addBodyClass` | `boolean` | `true` | If `true` specified or default class will be added to html `body` element when popup is opened. This class is removed while dialog is being closed.
 `customBodyClass` | `string` | `'marzetz-dialog-opened'` | The css class that would be added to html `body` element whilst dialog is being opened.
-`customComponent` | `any` (your component) | `null` | Custom component to inject into dialog on init.
+`customComponent` | `any` (your component) | `null` | Custom component to inject into dialog on init. You should also add it to `entryComponents` in your main module.
 `customContent` | `string` (html) | `null` | The content to show inside dialog. Use it if you want to create simple alert/info popup.
 `animation` | `string` | `'normal'` | The animation that will be applied on dialog. Supported values: `'normal'` and `'error'`.
 

@@ -1,0 +1,10 @@
+.custom-dialog-component {
+    background-color: red;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.input-wrapper {
+    margin-top: 20px;
+    display: inline-block;
+}

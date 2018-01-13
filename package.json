@@ -5,7 +5,9 @@
   "main": "marzetz-dialog.module.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "packagr": "ng-packagr -p ng-package.json"
+    "build": "ng-packagr -p ng-package.json",
+    "publish-package": "npm publish dist",
+    "demo": "cd demo; npm install; npm start;"
   },
   "repository": {
     "type": "git",
