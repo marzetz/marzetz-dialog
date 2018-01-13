@@ -6,7 +6,7 @@
 
 ## Demo
 
-![demo](https://raw.githubusercontent.com/devyumao/devyumao.github.io/master/angular2-busy/img/demo.gif)
+![demo](https://raw.githubusercontent.com/marzetz/marzetz-dialog/master/demo/img/demo.gif)
 
 ## Installation
 
