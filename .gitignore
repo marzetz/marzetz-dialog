@@ -1,7 +1,7 @@
 # Node Files
-/node_modules
-npm-debug.log
-dist
+lib/node_modules
+lib/npm-debug.log
+lib/dist
 
 # IDE
 .idea
