@@ -36,8 +36,6 @@ export class MarzetzDialogDirective implements OnInit, OnDestroy {
 
     /**
      * This method checks some of the dialog options and calls appropriate methods;
-     *
-     * @param {MarzetzDialogInternal} component
      */
     private resolveComponent(component: MarzetzDialogInternal): void {
         if (component._init) {

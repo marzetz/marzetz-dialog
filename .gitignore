@@ -1,7 +1,11 @@
 # Node Files
-lib/node_modules
-lib/npm-debug.log
-lib/dist
+node_modules
 
 # IDE
 .idea
+
+# tmp
+tmp
+
+# build
+dist

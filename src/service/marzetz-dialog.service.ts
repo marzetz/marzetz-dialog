@@ -9,14 +9,11 @@ export class MarzetzDialogService {
     private openedNumber: number = 0;
 
     constructor(private marzetzDialogObservablesService: MarzetzDialogObservablesService,
-                @Inject(DOCUMENT) private document: Document) {
+                @Inject(DOCUMENT) private document) {
     }
 
     /**
      * This method injects dialog, when argument is an object or undefined. It returns instance of MarzetzDialogInternal with `_index` property;
-     *
-     * @param {MarzetzDialogOptions} options
-     * @returns {MarzetzDialogInternal}
      */
     public init(options?: MarzetzDialogOptions): MarzetzDialogInternal {
         options = new MarzetzDialogOptions(options);
@@ -28,9 +25,6 @@ export class MarzetzDialogService {
 
     /**
      * This method opens dialog which was already injected;
-     *
-     * @param {MarzetzDialogOptions | number} index
-     * @returns {MarzetzDialogInternal | void}
      */
     public open(index: number): MarzetzDialogInternal {
         if (this.openedNumber < index) {
@@ -50,9 +44,6 @@ export class MarzetzDialogService {
 
     /**
      * This method closes dialog which was initiated with specific `_index` argument;
-     *
-     * @param {number} index
-     * @returns {MarzetzDialogInternal}
      */
     public close(index: number): MarzetzDialogInternal {
         if (typeof index !== 'number') {
@@ -71,8 +62,6 @@ export class MarzetzDialogService {
 
     /**
      * This method closes all dialogs.
-     *
-     * @returns {MarzetzDialogInternal[]}
      */
     public closeAll(): MarzetzDialogInternal[] {
         const internals = this.marzetzDialogObservablesService.getMarzetzDialogInternals();
@@ -88,9 +77,6 @@ export class MarzetzDialogService {
 
     /**
      * This method destroys dialog which was initiated with specific `_index` argument;
-     *
-     * @param {number} index
-     * @returns {MarzetzDialogInternal}
      */
     public destroy(index: number): MarzetzDialogInternal {
         if (typeof index !== 'number') {
@@ -107,8 +93,6 @@ export class MarzetzDialogService {
 
     /**
      * This method destroys all dialogs;
-     *
-     * @returns {MarzetzDialogInternal[]}
      */
     public destroyAll(): MarzetzDialogInternal[] {
         const internals = this.marzetzDialogObservablesService.getMarzetzDialogInternals();

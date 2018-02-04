@@ -16,8 +16,6 @@ export class MarzetzDialogObservablesService {
 
     /**
      * This method returns marzetzDialogObservable;
-     *
-     * @returns {Observable<Array<MarzetzDialogInternal>>}
      */
     public getMarzetzDialogObservable(): Observable<Array<MarzetzDialogInternal>> {
         return this.marzetzDialogObservable;
@@ -25,9 +23,6 @@ export class MarzetzDialogObservablesService {
 
     /**
      * This method updates marzetzDialogObservable and pushes/updates dialog options into/in dialogInternalList;
-     *
-     * @param {MarzetzDialogInternal} internal
-     * @returns {MarzetzDialogInternal}
      */
     public updateMarzetzDialogObservable(internal: MarzetzDialogInternal): MarzetzDialogInternal {
         // check if change occurs
@@ -48,9 +43,6 @@ export class MarzetzDialogObservablesService {
 
     /**
      * This method returns specific dialog options;
-     *
-     * @param {number} index
-     * @returns {MarzetzDialogInternal}
      */
     public getMarzetzDialogInternal(index: number): MarzetzDialogInternal {
         return this.dialogsInternalList[index];
@@ -58,8 +50,6 @@ export class MarzetzDialogObservablesService {
 
     /**
      * This method returns whole array of dialog options;
-     *
-     * @returns {MarzetzDialogInternal[]}
      */
     public getMarzetzDialogInternals(): MarzetzDialogInternal[] {
         return this.dialogsInternalList;

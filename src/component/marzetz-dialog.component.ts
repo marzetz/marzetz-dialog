@@ -12,7 +12,7 @@ import {MARZETZ_DIALOG_OPTIONS_KEYS} from '../utility/marzetz-dialog.options';
 @Component({
     selector: 'app-marzetz-dialog',
     templateUrl: './marzetz-dialog.component.html',
-    styleUrls: ['./marzetz-dialog.component.less']
+    styleUrls: ['./marzetz-dialog.component.css']
 })
 export class MarzetzDialogComponent implements OnInit {
     public closingTrigger = ClosingTrigger;
@@ -32,8 +32,6 @@ export class MarzetzDialogComponent implements OnInit {
     // @TODO: Maybe first two cases won't be necessary, check this;
     /**
      * This method closes component from inside or from child component (default case);
-     *
-     * @param {ClosingTrigger} trigger
      */
     public close(trigger?: ClosingTrigger) {
         switch (trigger) {
@@ -63,8 +61,6 @@ export class MarzetzDialogComponent implements OnInit {
 
     /**
      * This method injects custom component if it was passed in dialog options;
-     *
-     * @param component
      */
     private injectCustomComponent(component: any) {
         const _cfr = this.cfr.resolveComponentFactory(component);
