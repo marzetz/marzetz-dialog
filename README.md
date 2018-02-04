@@ -144,7 +144,7 @@ Option | Type | Default | Desctiption
 `customBodyClass` | `string` | `'marzetz-dialog-opened'` | The css class that would be added to html `body` element whilst dialog is being opened.
 `customComponent` | `any` (your component) | `null` | Custom component to inject into dialog on init. You should also add it to `entryComponents` in your main module.
 `customContent` | `string` (html) | `null` | The content to show inside dialog. Use it if you want to create simple alert/info popup.
-`animation` | `string` | `'normal'` | The animation that will be applied on dialog. Supported values: `'normal'` and `'error'`.
+`animation` | `string` | `'normal'` | The animation that will be applied on dialog. Supported values: `'normal'`, `'bounceIn'` and `'error'`.
 
 ## Credits
 
