@@ -11,4 +11,4 @@ tmp
 dist
 
 #styles
-*.css
+**.css
